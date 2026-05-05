@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Architecture</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="cursor-glow"></div>
+<header class="main-header">
+    <div class="header-left">🌿 <strong>AgroDetect AI</strong></div>
+    <nav class="header-nav">
+        <a href="/">Home</a>
+        <a href="/report">Report</a>
+        <a href="/insights">Insights</a>
+    </nav>
+</header>
+
+<div class="report-section ">
+    <div class="header-title"><h2>🧠 Model Architecture Summary</h2></div>
+
+    <div class="model-summary">
+        <pre>{{ summary }}</pre>
+    </div>
+
+    <div class="report-buttons">
+        <a href="/insights" class="btn">⬅ Back to Insights</a>
+    </div>
+</div>
+
+</body>
+</html>
